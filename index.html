@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0.1" />
+  <title>Elite Communication Mastery Program | Veritone Services</title>
+  <meta name="description" content="12-Week Transformational Program for Busy Professionals Who Want to Speak with Confidence, Influence, and Executive Presence." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #e11d48;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --dark-gray: #1e293b;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--primary);
+      background: var(--light);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+      color: white;
+      padding: 6rem 0 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background: var(--light);
+      clip-path: ellipse(70% 100% at 50% 100%);
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .badge {
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(225, 29, 72, 0.4);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(225, 29, 72, 0.5);
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: var(--primary);
+    }
+
+    .highlight {
+      color: var(--accent);
+    }
+
+    /* Outcomes */
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .outcome-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .outcome-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .outcome-card h3 {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+    }
+
+    /* Week Grid */
+    .weeks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .week {
+      background: white;
+      border-left: 6px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: 0 12px 12px 0;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      transition: all 0.3s;
+    }
+
+    .week:hover {
+      transform: translateX(10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    .week-number {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Guarantee */
+    .guarantee {
+      background: linear-gradient(135deg, var(--accent), #be123c);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 20px;
+      margin: 5rem 0;
+    }
+
+    .guarantee h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer CTA */
+    .final-cta {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      color: white;
+    }
+
+    .price {
+      font-size: 4rem;
+      font-weight: 800;
+      margin: 2rem 0;
+      color: var(--accent);
+    }
+
+    .price-note {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark-gray);
+      color: #94a3b8;
+      text-align: center;
+      padding: 3rem 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2.2rem;
+      }
+      header {
+        padding: 4rem 0 3rem;
+      }
+      .logo {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Veritone Services</div>
+      <h1>Elite Communication Mastery Program</h1>
+      <p class="tagline">12-Week Live Cohort for Busy Professionals<br>From Functional Communicator → Influential Leader</p>
+      <div class="badge">Next Cohort Starts January 13th – Only 15 Seats</div>
+      <button class="cta-button" onclick="document.getElementById('enroll').scrollIntoView({behavior: 'smooth'})">
+        Reserve Your Seat Now
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Outcomes -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">By Week 12, You Will Be Able To:</h2>
+      <div class="outcomes-grid">
+        <div class="outcome-card">
+          <h3>Speak with Unshakable Confidence</h3>
+          <p>In meetings, presentations, negotiations, and media interviews</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Run Meetings People Thank You For</h3>
+          <p>End early, stay on track, and get real decisions made</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Give Feedback That Actually Changes Behavior</h3>
+          <p>Using proven models (SBI, Radical Candor, FBI Stairway)</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Handle Difficult Conversations Without Stress</h3>
+          <p>Conflict, bad news, high-stakes moments – all mastered</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Persuade & Influence at the Highest Level</h3>
+          <p>Cialdini principles + modern ethical persuasion science</p>
+        </div>
+        <div class="outcome-card">
+          <h3>Think & Speak on Your Feet – Flawlessly</h3>
+          <p>No more “um,” freezing, or rambling under pressure</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Outline -->
+  <section style="background:#0f172a; color:white;">
+    <div class="container">
+      <h2 class="section-title" style="color:white;">The 12-Week Transformation</h2>
+      <div class="weeks">
+        <div class="week"><div class="week-number">Week 1</div><strong>Foundations:</strong> Eliminate filler words, master posture & breath</div>
+        <div class="week"><div class="week-number">Week 2</div><strong>Voice Mastery:</strong> Sound like the leader you are</div>
+        <div class="week"><div class="week-number">Week 3</div><strong>Structure Mastery:</strong> Pyramid Principle & crystal-clear messaging</div>
+        <div class="week"><div class="week-number">Week 4</div><strong>Storytelling That Moves People</strong> (your signature story)</div>
+        <div class="week"><div class="week-number">Week 5</div><strong>Executive Presence & Non-Verbals</strong></div>
+        <div class="week"><div class="week-number">Week 6</div><strong>Powerful Presentations & Slide Design</strong></div>
+        <div class="week"><div class="week-number">Week 7</div><strong>Difficult Conversations & Conflict Mastery</strong> (with actors)</div>
+        <div class="week"><div class="week-number">Week 8</div><strong>Persuasion & Ethical Influence Science</strong></div>
+        <div class="week"><div class="week-number">Week 9</div><strong>Meetings & Facilitation Mastery</strong> (you run a live meeting)</div>
+        <div class="week"><div class="week-number">Week 10</div><strong>Personal Brand & Thought Leadership</strong></div>
+        <div class="week"><div class="week-number">Week 11</div><strong>Impromptu Speaking & Hot Seat</strong></div>
+        <div class="week"><div class="week-number">Week 12</div><strong>Final Keynote + Certification</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section>
+    <div class="container">
+      <div class="guarantee">
+        <h2>Ironclad Guarantee</h2>
+        <p style="font-size:1.3rem; max-width:800px; margin:0 auto;">
+          If you do the work and are not at least <strong>2× more confident and effective</strong> in your communication after 12 weeks,<br>we will coach you 1-on-1 for <strong>free</strong> until you are.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="enroll">
+    <div class="container">
+      <h2>Only 15 Seats Per Cohort</h2>
+      <p>Next cohort begins <strong>January 13, 2026</strong></p>
+      <div class="price">$4,997</div>
+      <p class="price-note">or 3 payments of $1,797 • Includes lifetime access + AI speech analysis</p>
+      <button class="cta-button" style="font-size:1.5rem; padding:1.5rem 4rem;">
+        Yes! Reserve My Seat Now
+      </button>
+      <p style="margin-top:2rem; opacity:0.9;">Seats are first-come, first-served. 11 already reserved this week.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Veritone Services. All rights reserved.<br>
+      <a href="#" style="color:#94a3b8;">Privacy Policy</a> • <a href="#" style="color:#94a3b8;">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.outcome-card, .week').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'all 0.8s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
